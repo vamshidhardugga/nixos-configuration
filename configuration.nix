@@ -76,15 +76,16 @@
       mise
       mpv
       obs-studio
-      wl-clipboard
+      podman-compose
+      vscode
     ];
   };
   environment.systemPackages = with pkgs; [
     curl
     git
     nautilus
-    vim
   ];
+  programs.nix-ld.enable = true;
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
