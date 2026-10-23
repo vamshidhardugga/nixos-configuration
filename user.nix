@@ -29,26 +29,20 @@
     ];
     packages = with pkgs; [
       brave-origin
-      delve
+      devenv
       gh
       ghostty
-      go
-      go-task
-      golangci-lint
-      gopls
       mpv
       nixd
       nixfmt
-      nodejs
       obs-studio
       starship
       transmission_4
       unzip
+      vscode
       wl-clipboard
-      zed-editor
       zip
     ];
   };
   programs.nix-ld.enable = true;
-  programs.starship.enable = true;
 }
